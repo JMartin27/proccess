@@ -4,7 +4,13 @@ export default {
         'js',
     ],
     testMatch: ['**/?(*.)+(spec|test).(m)js'],
+
+    collectCoverageFrom: [
+        '**/app.mjs',
+        '**/handlers/**/*.mjs',
+      ],
     verbose: true,
+    collectCoverage: true,
     coverageThreshold: {
         global: {
             branch: 90,
